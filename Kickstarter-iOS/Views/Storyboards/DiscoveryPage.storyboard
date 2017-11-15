@@ -30,19 +30,19 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="mTa-Hu-hCu">
-                                            <rect key="frame" x="20" y="32" width="360" height="106"/>
+                                            <rect key="frame" x="20" y="32" width="360" height="97"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="kickstarter-logo" translatesAutoresizingMaskIntoConstraints="NO" id="bjX-R6-UNK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="360" height="29"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kickstarter-logo" translatesAutoresizingMaskIntoConstraints="NO" id="bjX-R6-UNK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="360" height="17"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSL-8E-DPW">
-                                                    <rect key="frame" x="0.0" y="41" width="360" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSL-8E-DPW">
+                                                    <rect key="frame" x="0.0" y="29" width="360" height="24"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epB-3O-SOe">
-                                                    <rect key="frame" x="0.0" y="77" width="360" height="29"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epB-3O-SOe">
+                                                    <rect key="frame" x="0.0" y="65" width="360" height="32"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                     <state key="normal">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -551,7 +551,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="kickstarter-logo" width="149" height="29"/>
+        <image name="kickstarter-logo" width="164" height="17"/>
         <image name="metadata-featured" width="11" height="12"/>
     </resources>
 </document>

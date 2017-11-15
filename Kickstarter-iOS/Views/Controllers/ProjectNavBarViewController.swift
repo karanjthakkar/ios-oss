@@ -73,7 +73,7 @@ public final class ProjectNavBarViewController: UIViewController {
       |> UIView.lens.layer.shadowOpacity .~ 0
       |> UIView.lens.layer.shadowRadius .~ 2
       |> UIView.lens.layer.shadowOffset .~ CGSize(width: 0, height: 2)
-      |> UIView.lens.layer.shadowColor .~ UIColor.black.cgColor
+      |> UIView.lens.layer.shadowColor .~ UIColor.ksr_grey_500.cgColor
 
     _ = self.closeButton
       |> UIButton.lens.title(forState: .normal) .~ nil
@@ -96,13 +96,15 @@ public final class ProjectNavBarViewController: UIViewController {
     _ = self.shareButton
       |> shareButtonStyle
       |> UIButton.lens.contentEdgeInsets
-      .~ .init(top: Styles.gridHalf(4), left: Styles.gridHalf(5), bottom: Styles.gridHalf(5),
-               right: Styles.gridHalf(5))
+      .~ .init(top: Styles.grid(2), left: Styles.gridHalf(5), bottom: Styles.grid(2),
+               right: Styles.grid(2))
       |> UIButton.lens.accessibilityLabel %~ { _ in Strings.dashboard_accessibility_label_share_project() }
 
     _ = self.saveButton
       |> saveButtonStyle
-      |> UIButton.lens.contentEdgeInsets .~ .init(all: 0)
+      |> UIButton.lens.contentEdgeInsets
+      .~ .init(top: Styles.gridHalf(6), left: Styles.gridHalf(5), bottom: Styles.gridHalf(5),
+               right: Styles.gridHalf(5))
       |> UIButton.lens.accessibilityLabel %~ { _ in Strings.Toggle_saving_this_project() }
   }
 
@@ -130,7 +132,7 @@ public final class ProjectNavBarViewController: UIViewController {
       .observeForUI()
       .observeValues { [weak self] didScrollToTop in
         UIView.animate(withDuration: 0.0) {
-          self?.backgroundView.layer.shadowOpacity = didScrollToTop ? 0 : 0.17
+          self?.backgroundView.layer.shadowOpacity = didScrollToTop ? 0 : 1
         }
       }
 
